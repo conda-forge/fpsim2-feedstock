@@ -1,5 +1,5 @@
 {% set name = "fpsim2" %}
-{% set version = "0.2.4" %}
+{% set version = "0.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/chembl/FPSim2/archive/{{ version }}.tar.gz
-  sha256: 1312ea16c421c1e47f2dc9b35c5c713f5878ed0fd2e8eff362b45b8cf9954fd3
+  sha256: f12565091260a90e59cbf8b08a2b629517dcfcb807b3f051ebda4e8d834a22d7
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -45,7 +45,7 @@ about:
   home: https://github.com/chembl/FPSim2
   license: MIT
   license_file: LICENSE
-  summary: 'Simple package for fast molecular similarity searches'
+  summary: Simple package for fast molecular similarity searches
 
 extra:
   recipe-maintainers:

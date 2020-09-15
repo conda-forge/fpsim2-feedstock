@@ -1,5 +1,5 @@
 {% set name = "fpsim2" %}
-{% set version = "0.2.7" %}
+{% set version = "0.2.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/chembl/FPSim2/archive/{{ version }}.tar.gz
-  sha256: 36aa0a700ca4dfb00b025be4533f6576211516c956fe37a5cabf60e706ce568a
+  sha256: 4f0fc61ba64e363af400e0d62ae3950deb7398ec54f8dbe1d8e77346a925d92d
 
 build:
   number: 0

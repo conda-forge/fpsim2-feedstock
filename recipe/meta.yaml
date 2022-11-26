@@ -26,9 +26,10 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - pytables >=3.4.4
-    - rdkit >=2018.09
+    - rdkit >=2022.03.3
     - scipy
     - tqdm
+    - sqlalchemy >=1.4
 
 test:
   imports:

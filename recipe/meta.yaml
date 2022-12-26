@@ -29,7 +29,7 @@ requirements:
     - rdkit >=2022.03.3
     - scipy
     - tqdm
-    - sqlalchemy >=1.4
+    - sqlalchemy >=1.4.45
 
 test:
   imports:

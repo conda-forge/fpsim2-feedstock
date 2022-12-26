@@ -1,5 +1,5 @@
 {% set name = "fpsim2" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/chembl/FPSim2/archive/{{ version }}.tar.gz
-  sha256: 0c40caddf70f45008bf9dad4f1b9dd0bfe25d83c265a836afc1a8dd694b555ed
+  sha256: 0ee803cd43ca734a8bb94a646f6b6611ecaa68ace32f6deb9d99b161712bca3b
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -29,7 +29,7 @@ requirements:
     - rdkit >=2022.03.3
     - scipy
     - tqdm
-    - sqlalchemy >=1.4
+    - sqlalchemy >=1.4.45
 
 test:
   imports:

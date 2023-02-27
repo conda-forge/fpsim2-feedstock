@@ -1,11 +1,11 @@
-About fpsim2
-============
+About fpsim2-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fpsim2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/chembl/FPSim2
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fpsim2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Simple package for fast molecular similarity searches
 

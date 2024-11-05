@@ -10,12 +10,13 @@ source:
   sha256: 554bba0fa802e157a9edffc621c0c264210167f602d06cc478b9588b42d45b61
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
@@ -24,7 +25,6 @@ requirements:
     - pybind11 >=2.2
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - pytables >=3.4.4
     - rdkit >=2022.03.3
     - scipy

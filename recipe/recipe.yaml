@@ -55,7 +55,7 @@ tests:
         - pytest
     files:
       source:
-        - tests/
+        - tests/**
     script:
       - fpsim2-create-db --help
       - pytest -vvv tests/

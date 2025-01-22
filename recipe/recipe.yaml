@@ -50,16 +50,9 @@ tests:
   - python:
       imports:
         - FPSim2
-  - requirements:
-      run:
-        - pytest
-    files:
-      source:
-        - tests/
-        - tests/data/
-    script:
+      pip_check: true
+  - script:
       - fpsim2-create-db --help
-      - pytest -vvv tests/
 
 about:
   summary: Simple package for fast molecular similarity searching

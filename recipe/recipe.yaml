@@ -13,7 +13,7 @@ source:
   sha256: d8da3fd37c707db459edeab72c9c70fe3986aeefd463352da0cbcef780341d53
 
 build:
-  number: 0
+  number: 1
   skip: match(python, "<3.10")
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -44,7 +44,7 @@ requirements:
     - sqlalchemy >=1.4.47
     - scipy
     - tqdm
-    - ${{ pin_compatible('numpy') }}
+    - numpy
 
 tests:
   - python:

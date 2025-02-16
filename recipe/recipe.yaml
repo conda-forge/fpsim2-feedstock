@@ -44,7 +44,7 @@ requirements:
     - sqlalchemy >=1.4.47
     - scipy
     - tqdm
-    - ${{ pin_compatible('numpy') }}
+    - numpy
 
 tests:
   - python:

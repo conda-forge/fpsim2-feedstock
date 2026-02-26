@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: fpsim2
-  version: 0.7.3
+  version: "0.7.4"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/fpsim2-${{ version }}.tar.gz
-  sha256: d8da3fd37c707db459edeab72c9c70fe3986aeefd463352da0cbcef780341d53
+  sha256: d29f84570a89420c30e0aa5e9639ec51e7dd2fbcdc3d085add8de84c698556d6
 
 build:
-  number: 3
+  number: 0
   skip: match(python, "<3.10")
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
